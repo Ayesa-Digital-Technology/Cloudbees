@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: eulen-rest-api
+  description: The Eulen REST API
+  tags:
+    - rest
+    - api
+    - eulen
+  annotations:
+    backstage.io/managed-by-location: file:catalog/eulen-api.yaml
+    backstage.io/managed-by-origin-location: file:catalog-info.yaml
+    github.com/project-slug: AngC1/Roadie
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-eulen-backend
+  definition:
+    $text: ./openapi.yaml

@@ -1,0 +1,45 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: engineering
+  description: Global engineering organization
+spec:
+  type: organization
+  owner: group:engineering
+  children:
+    - team-eulen
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-eulen
+  description: Core Eulen engineering team
+spec:
+  type: team
+  parent: engineering
+  owner: group:engineering
+  children:
+    - team-eulen-frontend
+    - team-eulen-backend
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-eulen-frontend
+  description: Eulen frontend development team
+spec:
+  type: team
+  parent: team-eulen
+  owner: group:team-eulen
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-eulen-backend
+  description: Eulen backend development team
+spec:
+  type: team
+  parent: team-eulen
+  owner: group:team-eulen
+  children: []

@@ -1,0 +1,33 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eulen-spring
+  title: Eulen Spring Service
+  description: Eulen Spring Boot Backend Service
+  annotations:
+    github.com/project-slug: AngC1/Roadie
+    backstage.io/source-location: url:https://github.com/AngC1/Roadie
+    backstage.io/techdocs-ref: url:https://github.com/AngC1/Roadie/tree/main
+    github.com/workflows: ci.yml,deploy.yml
+    roadie.io/enabled: 'true'
+    backstage.io/view-url: https://github.com/AngC1/Roadie/tree/main/src/eulen
+    backstage.io/edit-url: https://github.com/AngC1/Roadie/edit/main/src/eulen
+    jenkins.io/job-full-name: Eulen/spring-service-build
+    backstage.io/managed-by-location: file:catalog/eulen-spring-catalog.yaml
+    backstage.io/managed-by-origin-location: file:catalog-info.yaml
+  tags:
+    - java
+    - spring-boot
+    - backend
+  links:
+    - url: https://ayesa.roadie.so/
+      title: Roadie Portal
+      icon: dashboard
+spec:
+  type: service
+  lifecycle: production
+  owner: team-eulen-backend
+  system: eulen-platform
+  dependsOn:
+    - component:eulen-api
+  framework: spring-boot
