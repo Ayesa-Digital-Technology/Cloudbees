@@ -8,6 +8,7 @@ spec:
   owner: group:engineering
   children:
     - team-eulen
+    - team-exolum
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -42,4 +43,39 @@ spec:
   type: team
   parent: team-eulen
   owner: group:team-eulen
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-exolum
+  description: Core Exolum engineering team
+spec:
+  type: team
+  parent: engineering
+  owner: group:engineering
+  children:
+    - team-exolum-frontend
+    - team-exolum-backend
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-exolum-frontend
+  description: Exolum frontend development team
+spec:
+  type: team
+  parent: team-exolum
+  owner: group:team-exolum
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-exolum-backend
+  description: Exolum backend development team
+spec:
+  type: team
+  parent: team-exolum
+  owner: group:team-exolum
   children: []

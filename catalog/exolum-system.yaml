@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: exolum-platform
+  description: Exolum platform composed of frontend, Node.js API and Spring services.
+  annotations:
+    github.com/project-slug: Ayesa-Digital-Technology/Cloudbees
+    backstage.io/techdocs-ref: url:https://github.com/Ayesa-Digital-Technology/Cloudbees/tree/main
+spec:
+  owner: group:team-exolum
+  domain: exolum-platform-domain

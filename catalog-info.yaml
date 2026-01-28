@@ -11,6 +11,11 @@ spec:
     - ./catalog/eulen-spring-catalog.yaml
     - ./catalog/eulen-api.yaml
     - ./catalog/eulen-system.yaml
+    - ./catalog/exolum-frontend-catalog.yaml
+    - ./catalog/exolum-api-catalog.yaml
+    - ./catalog/exolum-spring-catalog.yaml
+    - ./catalog/exolum-api.yaml
+    - ./catalog/exolum-system.yaml
     - ./catalog/groups.yaml
     - ./catalog/domains.yaml
     - ./scaffolder-templates/angular-component.yaml
