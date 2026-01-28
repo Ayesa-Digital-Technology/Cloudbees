@@ -66,3 +66,16 @@ metadata:
     github.com/project-slug: AngC1/Roadie
 spec:
   owner: group:engineering
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: exolum-platform-domain
+  description: Dominio principal de la Plataforma Exolum que agrupa todos los sistemas y componentes
+  tags:
+    - platform
+    - exolum
+  annotations:
+    github.com/project-slug: Ayesa-Digital-Technology/Cloudbees
+spec:
+  owner: group:team-exolum

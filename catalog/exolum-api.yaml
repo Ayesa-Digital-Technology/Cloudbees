@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: exolum-rest-api
+  description: The Exolum REST API
+  tags:
+    - rest
+    - api
+    - exolum
+  annotations:
+    backstage.io/managed-by-location: file:catalog/exolum-api.yaml
+    backstage.io/managed-by-origin-location: file:catalog-info.yaml
+    github.com/project-slug: Ayesa-Digital-Technology/Cloudbees
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-exolum-backend
+  definition:
+    $text: ./openapi.yaml
